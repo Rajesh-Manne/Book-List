@@ -33,7 +33,7 @@ class Book extends Component {
     const{deleteItem} = this.props
 
     return(
-      <div className="book">
+      <div className="container">
          {/* <h4> From Book</h4>
          Book: {book}<br />
          Author: {author} */}
@@ -41,9 +41,11 @@ class Book extends Component {
        <div className="body">
        <img src={img} alt='book' />
        <div className="textbody">
+        <div className="headerbody">
         <h4>{title}</h4>
         <p>By:{author}</p>
         <p>{this.state.count}</p>
+        </div>
         <div className="buttons">       
          <button className="btn" onClick={this.incrementHandler} >Add to cart</button>
         <button className="btn" onClick={this.decrementHandler} >Remove from cart</button>
