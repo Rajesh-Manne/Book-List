@@ -34,3 +34,6 @@
 .textbody h4 {font-family: 'Bree Serif', serif;line-height:10%;}
 .textbody p {font-family: 'Baloo Thambi 2', cursive;}
 .btn{ padding:5px;background-color:#006DCB;color:#fff;border-radius: 3px;border:3px solid #006DCB;cursor:pointer;box-sizing:border-box;}
+.buttons .btn{
+margin-left: 5px;
+}

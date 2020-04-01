@@ -11,6 +11,12 @@ class Booklist extends Component {
          }
     }
     
+ sortedList = (id)=> {
+      const sortedBooks = this.state.books.filter(item=>item.id !== id);
+      this.setState({
+          books:sortedBooks
+      })
+    }
    
     render(){
         // const example = this.state.books.map(item=>item.book)
@@ -27,7 +33,7 @@ class Booklist extends Component {
         <Book key={item.id} info={item}/>)}
        */}
 
-       {this.state.books.map(item => <Book key={item.id} info={item} />)}
+       {this.state.books.map(book => <Book key={book.id} info={book} deleteItem={()=>this.sortedList(book.id)} />)}
         </div>
 
         )
